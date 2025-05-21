@@ -1,0 +1,7 @@
+#N canvas 70 34 974 500 10;
+#X obj 157 163 inlet~;
+#X obj 156 254 outlet~;
+#X obj 156 210 expr~ if ($v1 > -3.40282 * pow (10 \, 38) && $v1 < 3.40282
+* pow (10 \, 38) \, $v1 \, 0);
+#X connect 0 0 2 0;
+#X connect 2 0 1 0;

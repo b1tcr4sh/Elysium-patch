@@ -1,0 +1,12 @@
+input-lev 149.084;
+master-lev 151.723;
+recirc-lev 98.9496;
+loop1-lev 135.891;
+loop2-lev 141.168;
+loop3-lev 139.849;
+loop3-keep-loop-size 0;
+loop3-auto-loop 1;
+loop2-keep-loop-size 0;
+loop2-auto-loop 1;
+loop1-keep-loop-size 0;
+loop1-auto-loop 1;

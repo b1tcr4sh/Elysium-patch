@@ -1,0 +1,24 @@
+#N canvas 330 81 587 492 10;
+#X obj 69 49 inlet;
+#X obj 277 51 inlet;
+#X obj 113 317 outlet~;
+#X obj 69 78 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X floatatom 278 81 5 0 0 0 - - -;
+#X obj 113 254 cos~;
+#X obj 113 225 line~;
+#X obj 177 153 loadbang;
+#X msg 178 182 0.75;
+#X msg 67 178 0.75 \, 1.25 \$1;
+#X obj 68 135 float \$1;
+#X text 234 246 argument 1 = inlet 2 = duration of pulse (ms);
+#X connect 0 0 3 0;
+#X connect 1 0 4 0;
+#X connect 3 0 10 0;
+#X connect 4 0 10 1;
+#X connect 5 0 2 0;
+#X connect 6 0 5 0;
+#X connect 7 0 8 0;
+#X connect 8 0 6 0;
+#X connect 9 0 6 0;
+#X connect 10 0 9 0;
